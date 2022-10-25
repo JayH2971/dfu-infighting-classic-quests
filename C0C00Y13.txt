@@ -114,5 +114,10 @@ _questdone_ task:
 	end quest 
 
 _S.02_ task:
-	injured _spellsword_ saying 1011 
-	injured _thief_ saying 1011 
+	injured _spellsword_
+	clicked foe _spellsword_
+	change foe _spellsword_ infighting true
+	injured _thief_
+	clicked foe _thief_
+	change foe _thief_ infighting true
+	say 1011 

@@ -223,6 +223,11 @@ _S.02_ task:
 	give pc _reward_ 
 	end quest 
 
+_inj_ task:
+	injured _F.01_
+	clicked foe _F.01_
+	change foe _F.01_ infighting true
+
 _S.03_ task:
 	clicked npc _contact_ 
 	start timer _S.06_ 
@@ -246,6 +251,11 @@ _S.06_ task:
 variable _S.07_
 _S.08_ task:
 	create foe _F.00_ every 21 minutes 15 times with 25% success 
+
+_daily_ task:
+    daily from 0:00 to 23:59
+    change foe _F.00_ infighting true
+    clear _daily_
 
 _clearclick_ task:
 	when _S.04_ and not _S.02_ 

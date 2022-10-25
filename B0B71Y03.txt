@@ -382,6 +382,13 @@ _fire_ task:
 _S.10_ task:
 	create foe _warrior_ every 5 minutes 5 times with 50% success 
 
+_daily_ task:
+    daily from 0:00 to 23:59
+    change foe _F.00_ infighting true
+    change foe _battlemage_ infighting true
+    change foe _warrior_ infighting true
+    clear _daily_
+
 _greklith_ task:
 	injured _warrior_ saying 1026 
 

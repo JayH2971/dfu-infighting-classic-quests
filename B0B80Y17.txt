@@ -111,6 +111,14 @@ Foe _F.01_ is Lich
 _2dung_ task:
 	end quest 
 
+_inj_ task:
+	injured _F.00_
+	clicked foe _F.00_
+	change foe _F.00_ infighting true
+	injured _F.01_
+	clicked foe _F.01_
+	change foe _F.01_ infighting true
+
 _S.01_ task:
 	killed 1 _F.00_ saying 1011 
 	killed 1 _F.01_ saying 1011 

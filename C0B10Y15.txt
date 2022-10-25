@@ -171,6 +171,11 @@ _clearclick_ task:
 	say 1003
 	clear _qgclicked_ _clearclick_
 
+_inj_ task:
+	injured _lich_
+	clicked foe _lich_
+	change foe _lich_ infighting true
+
 _S.02_ task:
 	killed 1 _lich_ 
 

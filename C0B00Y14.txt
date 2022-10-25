@@ -170,6 +170,17 @@ _S.01_ task:
 _S.02_ task:
 	place foe _monster3_ at _mondung_ 
 
+_inj_ task:
+	injured _monster1_
+	clicked foe _monster1_
+	change foe _monster1_ infighting true
+	injured _monster2_
+	clicked foe _monster2_
+	change foe _monster2_ infighting true
+	injured _monster3_
+	clicked foe _monster3_
+	change foe _monster3_ infighting true
+
 _qtime_ task:
 	end quest 
 

@@ -156,3 +156,23 @@ _S.07_ task:
 
 _S.08_ task:
 	place foe _archer_ at _mondung_ 
+
+_inj1_ task:
+	injured _spellsword_
+	clicked foe _spellsword_
+	change foe _spellsword_ infighting true
+
+_inj2_ task:
+	injured _ranger_
+	clicked foe _ranger_
+	change foe _ranger_ infighting true
+
+_inj3_ task:
+	injured _knight_
+	clicked foe _knight_
+	change foe _knight_ infighting true
+
+_in4_ task:
+	injured _archer_
+	clicked foe _archer_
+	change foe _archer_ infighting true

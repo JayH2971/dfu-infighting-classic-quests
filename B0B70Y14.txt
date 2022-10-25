@@ -156,6 +156,20 @@ _S.01_ task:
 	killed 1 _lesser_ 
 	say 1011 
 
+_inj_ task:
+	injured _frost_
+	clicked foe _frost_
+	change foe _frost_ infighting true
+	injured _fire_
+	clicked foe _fire_
+	change foe _fire_ infighting true
+	injured _lord_
+	clicked foe _lord_
+	change foe _lord_ infighting true
+	injured _lesser_
+	clicked foe _lesser_
+	change foe _lesser_ infighting true
+
 _S.02_ task:
 	clicked npc _qgiver_ 
 

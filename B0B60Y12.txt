@@ -142,6 +142,11 @@ _2dung_ task:
 _S.01_ task:
 	killed 1 _monster_ saying 1011 
 
+_inj_ task:
+	injured _monster_
+	clicked foe _monster_
+	change foe _monster_ infighting true
+
 _S.02_ task:
 	clicked npc _qgiver_ 
 

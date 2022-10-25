@@ -162,3 +162,11 @@ _werewolf_ task:
 
 _wereboar_ task:
 	place foe boar at _mondung_ 
+
+_S.02_ task:
+	injured _wolf_
+	clicked foe _wolf_
+	change foe _wolf_ infighting true
+	injured boar
+	clicked foe boar
+	change foe boar infighting true

@@ -142,8 +142,26 @@ _S.07_ task:
 _S.08_ task:
 	place foe _monster4_ at _mondung_ 
 
-_S.09_ task:
-	injured _monster4_ saying 1020 
-	injured _monster3_ saying 1020 
-	injured _monster2_ saying 1020 
-	injured _monster1_ saying 1020 
+_inj1_ task:
+	injured _monster1_
+	clicked foe _monster1_
+	change foe _monster1_ infighting true
+	say 1020
+
+_inj2_ task:
+	injured _monster2_
+	clicked foe _monster2_
+	change foe _monster2_ infighting true
+	say 1020
+
+_inj3_ task:
+	injured _monster3_
+	clicked foe _monster3_
+	change foe _monster3_ infighting true
+	say 1020
+
+_in4_ task:
+	injured _monster4_
+	clicked foe _monster4_
+	change foe _monster4_ infighting true
+	say 1020

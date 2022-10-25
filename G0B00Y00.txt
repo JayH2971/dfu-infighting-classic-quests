@@ -138,3 +138,23 @@ _S.07_ task:
 
 _S.08_ task:
 	place foe _nightblade_ at _mondun_ 
+
+_inj1_ task:
+	injured _spellsword_
+	clicked foe _spellsword_
+	change foe _spellsword_ infighting true
+
+_inj2_ task:
+	injured _assassin_
+	clicked foe _assassin_
+	change foe _assassin_ infighting true
+
+_inj3_ task:
+	injured _knight_
+	clicked foe _knight_
+	change foe _knight_ infighting true
+
+_in4_ task:
+	injured _nightblade_
+	clicked foe _nightblade_
+	change foe _nightblade_ infighting true

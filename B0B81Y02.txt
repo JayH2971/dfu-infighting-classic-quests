@@ -246,6 +246,15 @@ Foe _battlemage_ is Battle_mage
 	pick one of _artifact1_ _artifact2_ _artifact3_ _artifact4_ 
 
 variable _2dung_
+
+_inj_ task:
+	injured _F.00_
+	clicked foe _F.00_
+	change foe _F.00_ infighting true
+	injured _F.01_
+	clicked foe _F.01_
+	change foe _F.01_ infighting true
+
 _S.01_ task:
 	killed 1 _F.01_ saying 1011 
 	killed 1 _F.00_ saying 1011 
@@ -328,6 +337,11 @@ yes task:
 	get item _I.06_ 
 	place foe _ghost_ at _dungeon3_ 
 
+_inj2_ task:
+	injured _ghost_
+	clicked foe _ghost_
+	change foe _ghost_ infighting true
+
 _no_ task:
 	say 1030 
 
@@ -340,7 +354,12 @@ _S.24_ task:
 	say 1040 
 
 _S.25_ task:
-	create foe _battlemage_ every 5 minutes 5 times with 50% success 
+	create foe _battlemage_ every 5 minutes 5 times with 50% success
+
+_daily_ task:
+    daily from 0:00 to 23:59
+    change foe _battlemage_ infighting true
+    clear _daily_ 
 
 _S.26_ task:
 	when _artifact1_ and _S.18_ 

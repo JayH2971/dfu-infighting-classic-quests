@@ -148,3 +148,23 @@ _S.07_ task:
 
 _S.08_ task:
 	place foe _wraith_ at _mondung_ 
+
+_inj1_ task:
+	injured _ghost_
+	clicked foe _ghost_
+	change foe _ghost_ infighting true
+
+_inj2_ task:
+	injured _mummy_
+	clicked foe _mummy_
+	change foe _mummy_ infighting true
+
+_inj3_ task:
+	injured _zombie_
+	clicked foe _zombie_
+	change foe _zombie_ infighting true
+
+_in4_ task:
+	injured _wraith_
+	clicked foe _wraith_
+	change foe _wraith_ infighting true

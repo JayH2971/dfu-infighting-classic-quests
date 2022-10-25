@@ -115,6 +115,11 @@ _pcgetsgold_ task:
 	give pc nothing 
 	end quest 
 
+_inj_ task:
+	injured _monster_
+	clicked foe _monster_
+	change foe _monster_ infighting true
+
 _mondead_ task:
 	killed 1 _monster_ saying 1011 
 

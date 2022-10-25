@@ -147,3 +147,11 @@ _S.07_ task:
 _clearclick_ task:
 	when not _S.03_ and _questdone_ 
 	clear _questdone_ _clearclick_ 
+
+_daily_ task:
+    daily from 0:00 to 23:59
+    change foe _bats_ infighting true
+    change foe _rats_ infighting true
+    change foe _scorpions_ infighting true
+    change foe _spiders_ infighting true
+    clear _daily_

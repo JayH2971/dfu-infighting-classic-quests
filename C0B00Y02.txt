@@ -347,7 +347,8 @@ _exorcise_ task:
 	take _item_ from pc 
 	hide npc _child_ 
 	say 1015 
-	place foe _daedra_ at _house_ 
+	place foe _daedra_ at _house_
+	change foe _daedra_ infighting true
 	clear _talkguardian_
 
 -until _exorcise_ performed:

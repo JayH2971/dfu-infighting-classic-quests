@@ -123,6 +123,11 @@ Foe _monster_ is Nightblade
 	pick one of _map_ _nomap_ _nomap_ 
 	place foe _monster_ at _mondun_ 
 
+_inj_ task:
+	injured _monster_
+	clicked foe _monster_
+	change foe _monster_ infighting true
+
 _queston_ task:
 	end quest 
 

@@ -146,6 +146,11 @@ _S.01_ task:
 	prompt 1011 yes _yes_ no _no_ 
 	take _evilfocus_ from pc
 
+_inj_ task:
+	injured _guardian_
+	clicked foe _guardian_
+	change foe _guardian_ infighting true
+
 _yes_ task:
 	remove foe _guardian_
 --better to just remove the daedra and avoid confusion
@@ -161,6 +166,14 @@ _no_ task:
 	create foe _lesserdaedra_ every 7 minutes 1 times with 100% success 
 	create foe _F.03_ every 3 minutes 1 times with 100% success 
 	say 1012 
+
+_daily_ task:
+    daily from 0:00 to 23:59
+    change foe _F.02_ infighting true
+    change foe _spiders_ infighting true
+    change foe _lesserdaedra_ infighting true
+    change foe _F.02_ infighting true
+    clear _daily_
 
 _S.04_ task:
 	killed 1 _guardian_ 

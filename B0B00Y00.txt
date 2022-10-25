@@ -182,12 +182,22 @@ _S.01_ task:
 	give pc nothing 
 	end quest 
 
+_inj_ task:
+	injured _monster_
+	clicked foe _monster_
+	change foe _monster_ infighting true
+
 _S.02_ task:
 	killed 1 _monster_ 
 	say 1012 
 
 _S.03_ task:
 	create foe imp0 every 40 minutes 100 times with 15% success 
+
+_daily_ task:
+    daily from 0:00 to 23:59
+    change foe imp0 infighting true
+    clear _daily_
 
 _S.04_ task:
 	clicked npc _lady_ 

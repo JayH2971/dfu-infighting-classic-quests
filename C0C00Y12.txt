@@ -163,8 +163,13 @@ _questdone_ task:
 	end quest 
 
 _S.02_ task:
-	injured _rogue_ saying 1012 
-	injured _burglar_ saying 1012 
+	injured _rogue_
+	clicked foe _rogue_
+	change foe _rogue_ infighting true
+	injured _burglar_
+	clicked foe _burglar_
+	change foe _burglar_ infighting true
+	say 1012
 
 _S.03_ task:
 	clicked npc _thief_ 

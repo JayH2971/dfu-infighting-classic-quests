@@ -155,10 +155,19 @@ _S.06_ task:
 	killed 1 _zombie_ 
 
 _S.07_ task:
-	injured _wraith_ saying 1011 
-	injured _zombie_ saying 1011 
-	injured _ghost_ saying 1011 
-	injured _skeleton_ saying 1011 
+	injured _wraith_
+	clicked foe _wraith_
+	change foe _wraith_ infighting true
+	injured _zombie_
+	clicked foe _zombie_
+	change foe _zombie_ infighting true
+	injured _ghost_
+	clicked foe _ghost_
+	change foe _ghost_ infighting true
+	injured _skeleton_
+	clicked foe _skeleton_
+	change foe _skeleton_ infighting true
+	say 1011
 
 _S.08_ task:
                start task _try_
