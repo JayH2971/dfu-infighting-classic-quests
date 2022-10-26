@@ -139,6 +139,26 @@ _S.02_ task:
 	killed 1 _F.03_ saying 1021 
 	killed 1 _F.00_ saying 1021 
 
+_inj1_ task:
+	injured _F.00_
+	clicked foe _F.00_
+	change foe _F.00_ infighting true
+
+_inj2_ task:
+	injured _F.01_
+	clicked foe _F.01_
+	change foe _F.01_ infighting true
+
+_inj3_ task:
+	injured _F.02_
+	clicked foe _F.02_
+	change foe _F.02_ infighting true
+
+_inj4_ task:
+	injured _F.03_
+	clicked foe _F.03_
+	change foe _F.03_ infighting true 
+
 variable _queston_
 _1stparton_ task:
 	end quest 

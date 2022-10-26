@@ -249,6 +249,7 @@ _S.02_ task:
 	log 1016 step 1 
 	say 1012 
 	place foe _duelist_ at _arena_ 
+	change foe _duelist_ infighting true
 
 _S.03_ task:
 	toting _dueler_ and _lover_ clicked 

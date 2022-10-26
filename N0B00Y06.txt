@@ -179,4 +179,6 @@ _S.03_ task:
 
 _S.04_ task:
 	injured _mummy_ 
+	clicked foe _mummy_
+	change foe _mummy_ infighting true
 	give item _wrappings_ to _mummy_ 

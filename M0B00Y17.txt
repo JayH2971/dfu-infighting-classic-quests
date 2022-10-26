@@ -241,6 +241,7 @@ _S.01_ task:
 
 _S.02_ task:
 	injured _tiger_ 
+	clicked foe _tiger_
 	_I.00_ used do _S.04_ 
 
 until _S.02_ performed:

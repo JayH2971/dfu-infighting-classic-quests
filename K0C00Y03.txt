@@ -206,6 +206,7 @@ variable _S.03_
 _S.04_ task:
 	hide npc _contact_ 
 	place foe _guard_ at _conhouse_ 
+	change foe _guard_ infighting true
 
 _S.05_ task:
 	injured _guard_ 

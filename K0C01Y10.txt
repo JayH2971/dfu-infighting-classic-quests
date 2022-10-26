@@ -203,6 +203,11 @@ Foe _F.01_ is Fire_atronach
 	log 1010 step 0 
 	place foe _guardian_ at _mondung_ 
 
+_inj_ task:
+	injured _guardian_
+	clicked foe _guardian_
+	change foe _guardian_ infighting true
+
 _queston_ task:
 	end quest 
 
@@ -215,6 +220,7 @@ _S.01_ task:
 _S.02_ task:
 	say 1015
 	create foe _F.01_ every 1 minutes 1 times with 100% success 
+	change foe _F.01_ infighting true
 
 _S.03_ task:
 	when _queston_ and _S.01_ 

@@ -130,6 +130,11 @@ Foe _monster_ is Lich
 	pick one of _map_ _nomap_ _nomap_ _map_ 
 	place foe _monster_ at _mondung_ 
 
+_inj_ task:
+	injured _monster_
+	clicked foe _monster_
+	change foe _monster_ infighting true
+
 _pcgetsgold_ task:
 	when _qgclicked_ and _mondead_ 
 	give pc _reward_ 

@@ -224,6 +224,13 @@ _S.09_ task:
 	change repute with _darkbmember_ by -50 
 	change repute with _darkbmember_ by -100 
 
+_daily_ task:
+    daily from 0:00 to 23:59
+    change foe _F.00_ infighting true
+    change foe _F.02_ infighting true
+    change foe _guards_ infighting true
+    clear _daily_
+
 variable _S.10_
 _S.11_ task:
 	dropped _decanter_ at _mansion_ 

@@ -138,7 +138,27 @@ _S.02_ task:
 	killed 1 _monster4_ saying 1021 
 	killed 1 _monster3_ saying 1021 
 	killed 1 _monster2_ saying 1021 
-	killed 1 _monster1_ saying 1021 
+	killed 1 _monster1_ saying 1021
+
+_inj1_ task:
+	injured _monster1_
+	clicked foe _monster1_
+	change foe _monster1_ infighting true
+
+_inj2_ task:
+	injured _monster2_
+	clicked foe _monster2_
+	change foe _monster2_ infighting true
+
+_inj3_ task:
+	injured _monster3_
+	clicked foe _monster3_
+	change foe _monster3_ infighting true
+
+_inj4_ task:
+	injured _monster4_
+	clicked foe _monster4_
+	change foe _monster4_ infighting true 
 
 variable _queston_
 _1stparton_ task:

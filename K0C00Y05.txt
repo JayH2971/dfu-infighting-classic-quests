@@ -270,6 +270,11 @@ _S.08_ task:
 	change repute with _knight_ by -15 
 --changed _metal_ here to _s.04_ to prevent false knight spawning
 
+_daily_ task:
+    daily from 0:00 to 23:59
+    change foe _warrior_ infighting true
+    clear _daily_
+
 _S.09_ task:
 	hide npc _child_ 
 	say 1015 

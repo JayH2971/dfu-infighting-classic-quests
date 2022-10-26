@@ -113,6 +113,26 @@ _pcgetsgold_ task:
 	give pc nothing 
 	end quest 
 
+_inj1_ task:
+	injured _nightblade_
+	clicked foe _nightblade_
+	change foe _nightblade_ infighting true
+
+_inj2_ task:
+	injured _battlemage_
+	clicked foe _battlemage_
+	change foe _battlemage_ infighting true
+
+_inj3_ task:
+	injured _acrobat_
+	clicked foe _acrobat_
+	change foe _acrobat_ infighting true
+
+_inj4_ task:
+	injured _assassin_
+	clicked foe _assassin_
+	change foe _assassin_ infighting true
+
 _mondead_ task:
 	killed 1 _nightblade_ saying 1021 
 	killed 1 _battlemage_ saying 1021 

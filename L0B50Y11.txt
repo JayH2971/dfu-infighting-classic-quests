@@ -213,6 +213,18 @@ _S.05_ task:
 	create foe _F.02_ every 4 minutes 5 times with 50% success 
 	create foe _F.01_ every 3 minutes 5 times with 50% success 
 
+_daily_ task:
+    daily from 0:00 to 23:59
+    change foe _F.01_ infighting true
+    change foe _F.02_ infighting true
+    change foe _F.03_ infighting true
+    change foe _home_ infighting true
+	change foe _home_ team 0
+	change foe _F.01_ team 0
+	change foe _F.02_ team 0
+	change foe _F.03_ team 0
+    clear _daily_
+
 variable _S.06_
 _S.07_ task:
 	killed 1 _home_ saying 1031 

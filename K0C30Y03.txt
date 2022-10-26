@@ -588,8 +588,18 @@ _S.16_ task:
 	create foe _F.03_ every 100 minutes 200 times with 5% success 
 	place foe _warrior_ at _mondung2_ 
 
+_daily_ task:
+    daily from 0:00 to 23:59
+    change foe _F.01_ infighting true
+    change foe _F.02_ infighting true
+    change foe _F.03_ infighting true
+    change foe _F.04_ infighting true
+    clear _daily_
+
 _S.17_ task:
 	injured _warrior_ 
+	clicked foe _monster_
+	change foe _monster_ infighting true
 	say 1023 
 
 _S.18_ task:

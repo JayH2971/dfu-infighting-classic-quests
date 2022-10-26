@@ -191,6 +191,8 @@ _queston_ task:
 
 _S.01_ task:
 	injured _enemy_ 
+	clicked foe _enemy_
+	change foe _enemy_ infighting true
 	say 1012 
 
 _killmon_ task:

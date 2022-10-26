@@ -274,6 +274,7 @@ _S.03_ task:
 
 _S.04_ task:
 	create foe _thug_ every 1 minutes 1 times with 100% success 
+	change foe _thug_ infighting true
 	get item _gem_ 
 	give item _map_ to _thug_ 
 	hide npc _kidnapper_ 

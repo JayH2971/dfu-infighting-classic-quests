@@ -145,6 +145,26 @@ _S.08_ task:
 _onehour_ task:
 	place foe _F.03_ at _mondung_ 
 
+_inj1_ task:
+	injured _F.00_
+	clicked foe _F.00_
+	change foe _F.00_ infighting true
+
+_inj2_ task:
+	injured _F.01_
+	clicked foe _F.01_
+	change foe _F.01_ infighting true
+
+_inj3_ task:
+	injured _F.02_
+	clicked foe _F.02_
+	change foe _F.02_ infighting true
+
+_inj4_ task:
+	injured _F.03_
+	clicked foe _F.03_
+	change foe _F.03_ infighting true 
+
 _clearclick_ task:
 	when _qgclicked_ and not _S.02_
 	say 1003 

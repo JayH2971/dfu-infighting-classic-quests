@@ -165,6 +165,16 @@ Foe _boss_ is Knight
 	place foe _boss_ at _stronghold_ 
 	place foe _assassin_ at _mondung_ 
 
+_inj1_ task:
+	injured _boss_
+	clicked foe _boss_
+	change foe _boss_ infighting true
+
+_inj2_ task:
+	injured _assassin_
+	clicked foe _assassin_
+	change foe _assassin_ infighting true
+
 _queston_ task:
 	end quest 
 

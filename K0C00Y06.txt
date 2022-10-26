@@ -880,6 +880,7 @@ Foe _guard4_ is Spellsword
 --	Quest start-up:
 	place item _gem_ at _mondung_ 
 	create foe _guard_ every 1 minutes 1 times with 100% success 
+	change foe _guard_ infighting true
 	dialog link for person necromancer 
 	dialog link for person _tg_ 
 	dialog link for person _thief_ 
@@ -993,6 +994,7 @@ _clickonwitness_ task:
 _firstwitnessdiscussion_ task:
 	when _clickonwitness_ and not _havereadwitnessletter_ 
 	create foe _guard2_ every 1 minutes 1 times with 100% success 
+	change foe _guard2_ infighting true
 	get item _almightyletter_ 
 	say 1025 
 	place npc _witness_ at _withouse_ 
@@ -1116,6 +1118,7 @@ _deliverlettertonoble_ task:
 _noevidenceconfrontation_ task:
 	when _clickanyone_ and not _makevictimreturn_ 
 	create foe _guard3_ every 1 minutes 1 times with 100% success 
+	change foe _guard3_ infighting true
 	say 1057 
 	clear _clickmerchant_ _clicknoble_ _clickpriest_ _clickthief_ 
 	start task _reminderwitness_
@@ -1151,6 +1154,7 @@ _revenge_ task:
 	when _clickmerchant_ and _deliverlettertopriest_ 
 	when _clickthief_ and _deliverlettertomerchant_ 
 	create foe _guard4_ every 1 minutes 1 times with 100% success 
+	change foe _guard4_ infighting true
 	say 1058 
 
 _questtimelimit_ task:

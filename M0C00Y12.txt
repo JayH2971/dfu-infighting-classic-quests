@@ -99,6 +99,7 @@ Foe _monster_ is Spider
 	log 1010 step 0 
 	create npc at _house_ 
 	place foe _monster_ at _house_ 
+	change foe _monster_ infighting true
 
 _2dung_ task:
 	end quest 

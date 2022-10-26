@@ -150,6 +150,26 @@ _S.06_ task:
 _S.07_ task:
 	place foe _fire_ at _dungeon_ 
 
+_inj1_ task:
+	injured _iron_
+	clicked foe _iron_
+	change foe _iron_ infighting true
+
+_inj2_ task:
+	injured _ice_
+	clicked foe _ice_
+	change foe _ice_ infighting true
+
+_inj3_ task:
+	injured _flesh_
+	clicked foe _flesh_
+	change foe _flesh_ infighting true
+
+_inj4_ task:
+	injured _fire_
+	clicked foe _fire_
+	change foe _fire_ infighting true 
+
 variable _map_
 variable _nomap_
 _S.10_ task:

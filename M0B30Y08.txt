@@ -120,6 +120,11 @@ _2dung_ task:
 _mondead_ task:
 	killed 1 _monster_ saying 1011 
 
+_inj_ task:
+	injured _monster_
+	clicked foe _monster_
+	change foe _monster_ infighting true
+
 _S.02_ task:
 	when _qgclicked_ and _mondead_ and _nomap_
 	give pc _gold_ 

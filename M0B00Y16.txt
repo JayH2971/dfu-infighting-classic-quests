@@ -171,8 +171,10 @@ variable _map_
 variable _nomap_
 _S.02_ task:
 	injured _giant_ 
+	clicked foe _giant_
 	start task _giantWaveWhileInDungeon_
 	say 1030 
+	change foe _giant_ infighting true
 
 _S.03_ task:
 	killed 1 _giant_ 
@@ -255,3 +257,8 @@ _giantWaveWhileInDungeon_ task:
 
 _spawnGiants_ task:
 	create foe _giantFriends_ every 3 minutes 6 times with 50% success 
+
+_daily_ task:
+    daily from 0:00 to 23:59
+    change foe _giantFriends_ infighting true
+    clear _daily_

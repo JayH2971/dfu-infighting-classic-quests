@@ -212,6 +212,11 @@ Foe _cousin_ is Knight
 	place foe _cousin_ at _mondung2_ 
 	place npc _victim_ at _mondung_ 
 
+_inj_ task:
+	injured _cousin_
+	clicked foe _cousin_
+	change foe _cousin_ infighting true
+
 _queston1_ task:
 	have _gem_ set _S.15_ 
 	end quest 

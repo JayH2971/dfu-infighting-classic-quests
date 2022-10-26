@@ -413,7 +413,9 @@ _S.09_ task:
 	_I.03_ used do _S.27_ 
 	say 1042
 	create foe _F.00_ every 1 minutes 1 times with 100% success 
+	change foe _F.00_ infighting true
 	create foe _mages_ every 2 minutes 1 times with 100% success 
+	change foe _mages_ infighting true
 	start timer _S.00_ 
 	log 1022 step 2 
 	get item _I.03_ 
@@ -433,6 +435,11 @@ _S.12_ task:
 _conhouse_ task:
 	when _S.00_ and not _S.12_ 
 	create foe _F.03_ every 30 minutes 5 times with 10% success 
+
+_daily_ task:
+    daily from 0:00 to 23:59
+    change foe _F.03_ infighting true
+    clear _daily_
 
 _S.14_ task:
 	injured _F.03_ 
@@ -497,6 +504,8 @@ _S.27_ task:
 
 _hittraitor_ task:
 	injured _mtraitor_ 
+	clicked foe _mtraitor_
+	change foe _mtraitor_ infighting true
 	start timer _S.35_ 
 	stop timer _gettraitor_ 
 	say 1071 
