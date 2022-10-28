@@ -152,6 +152,12 @@ _pchasitem_ task:
 	create foe _mages_ every 2 minutes 2 times with 25% success 
 	create foe _battlemage_ every 1 minutes 4 times with 25% success 
 
+_daily_ task:
+    daily from 0:00 to 23:59
+    change foe _mages_ infighting true
+    change foe _battlemage_ infighting true
+    clear _daily_
+
 _1stparton_ task:
 	make _vamprelic_ permanent 
 	change repute with _vampire_ by -5 

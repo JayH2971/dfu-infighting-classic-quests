@@ -163,18 +163,35 @@ _clearclick_ task:
 _week_ task:
 	place foe _battlemage_ at _mondung_ 
 
+_inj1_ task:
+	injured _battlemage_
+	clicked foe _battlemage_
+	change foe _battlemage_ infighting true
+	say 1020 
+
 _plot_ task:
 	place foe _mage_ at _mondung_ 
+
+_inj2_ task:
+	injured _mage_
+	clicked foe _mage_
+	change foe _mage_ infighting true
+	say 1020 
 
 _time_ task:
 	place foe _F.02_ at _mondung_ 
 
+_inj3_ task:
+	injured _F.02_
+	clicked foe _F.02_
+	change foe _F.02_ infighting true
+	say 1020 
+
 _vend_ task:
 	place foe _F.00_ at _mondung_ 
 
-_dummy_ task:
-	injured _mage_ 
-	injured _battlemage_ 
-	injured _F.00_ 
-	injured _F.02_ 
-	say 1020 
+_inj4_ task:
+	injured _F.00_
+	clicked foe _F.00_
+	change foe _F.00_ infighting true
+	say 1020

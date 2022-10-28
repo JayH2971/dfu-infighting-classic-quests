@@ -286,6 +286,11 @@ Foe _sorceror_ is Sorceror
 	give pc _letter_ notify 1023 
 	place foe _sorceror_ at _mondung_ 
 
+_inj_ task:
+	injured _sorceror_
+	clicked foe _sorceror_
+	change foe _sorceror_ infighting true
+
 _queston_ task:
 	change repute with _vamp_ by -10 
 	end quest 

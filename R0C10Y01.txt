@@ -122,6 +122,11 @@ Foe _thief_ is Nightblade
 	get item _item_ 
 	create npc _contact_ 
 
+_daily_ task:
+    daily from 0:00 to 23:59
+    change foe _thief_ infighting true
+    clear _daily_
+
 variable _pcgetsgold_
 variable _pchasitem_
 _queston_ task:

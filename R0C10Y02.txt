@@ -177,6 +177,11 @@ _npcclicked_ task:
 until _npcclicked_ performed:
 	create foe _thief_ every 5 minutes 5 times with 25% success 
 
+_daily_ task:
+    daily from 0:00 to 23:59
+    change foe _thief_ infighting true
+    clear _daily_
+
 variable _1stparton_
 variable _pchasitem1_
 variable _pchasitem2_

@@ -142,6 +142,11 @@ _S.01_ task:
 	killed 1 _vamprival_ 
 	say 1020 
 
+_inj_ task:
+	injured _vamprival_
+	clicked foe _vamprival_
+	change foe _vamprival_ infighting true
+
 _vampclicked_ task:
 	clicked npc _witch_ 
 

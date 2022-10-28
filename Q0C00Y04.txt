@@ -180,6 +180,14 @@ until _S.01_ performed:
 	create foe _wereboar_ every 11 minutes 10 times with 40% success msg 1014 
 	create foe _vampire_ every 15 minutes 7 times with 70% success msg 1012 
 
+_daily_ task:
+    daily from 0:00 to 23:59
+    change foe _werewolf_ infighting true
+    change foe _wereboar_ infighting true
+    change foe _vampire_ infighting true
+    clear _daily_
+--the vampires will infight with the lycans, and that is fine with me
+
 _S.02_ task:
 	toting _potion_ and _mage_ clicked 
 

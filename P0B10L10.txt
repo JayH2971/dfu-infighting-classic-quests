@@ -172,6 +172,11 @@ _S.03_ task:
 	when _vampclicked_ and not _S.04_ 
 	create foe _mage_ every 15 minutes 5 times with 50% success 
 
+_daily_ task:
+    daily from 0:00 to 23:59
+    change foe _mage_ infighting true
+    clear _daily_
+
 _S.04_ task:
 	injured _mage_ 
 	say 1013 

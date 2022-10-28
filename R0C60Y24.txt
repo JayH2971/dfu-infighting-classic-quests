@@ -253,3 +253,9 @@ _conhouse_ task:
 	when not _S.07_ and not _thankyou_ 
 	create foe _vampires_ every 10 minutes 8 times with 25% success 
 	create foe _vampleader_ every 20 minutes 1 times with 100% success 
+
+_daily_ task:
+    daily from 0:00 to 23:59
+    change foe _vampires_ infighting true
+    change foe _vampleader_ infighting true
+    clear _daily_

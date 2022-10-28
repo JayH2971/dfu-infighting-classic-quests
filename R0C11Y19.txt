@@ -163,6 +163,11 @@ _pchasitem2_ task:
 	get item _item2_ 
 	say 1010 
 
+_daily_ task:
+    daily from 0:00 to 23:59
+    change foe _F.00_ infighting true
+    clear _daily_
+
 yes task:
 	have _item2_ set _S.09_ 
 

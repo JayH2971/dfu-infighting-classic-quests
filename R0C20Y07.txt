@@ -131,6 +131,11 @@ Foe _giant_ is Giant
 	give item _item_ to _giant_ 
 	place foe _giant_ at _itemdung_ 
 
+_inj_ task:
+	injured _giant_
+	clicked foe _giant_
+	change foe _giant_ infighting true
+
 _pcgetsgold_ task:
 	toting _item_ and _qgfriend_ clicked 
 	give pc _reward_ 

@@ -388,6 +388,7 @@ variable _S.15_
 _S.16_ task:
 	hide npc _rippername_ 
 	place foe _murder_ at _ripperhouse_ 
+	change foe _murder_ infighting true
 
 _S.17_ task:
 	pc at _ripperhouse_ set _S.16_ 

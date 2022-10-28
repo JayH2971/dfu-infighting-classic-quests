@@ -210,6 +210,14 @@ until _thankyou_ performed:
 	create foe _lesserdaedra_ every 3 minutes 7 times with 12% success 
 	create foe _frostdaedra_ every 4 minutes 7 times with 17% success 
 
+_daily_ task:
+    daily from 0:00 to 23:59
+    change foe _seducer_ infighting true
+    change foe _lesserdaedra_ infighting true
+    change foe _firedaedra_ infighting true
+    change foe _frostdaedra_ infighting true
+    clear _daily_
+
 _clickoblivion_ task:
 	toting _item_ and _oblivion_ clicked 
 	prompt 1011 yes _thankyou_ no _gimmegimme_ 

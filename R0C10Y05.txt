@@ -157,7 +157,7 @@ Foe _giant_ is Giant
 	start timer _1stparton_ 
 	reveal _mondung_ 
 	log 1015 step 0 
-	pick one of _S.06_ _S.07_ _orsinium_ _S.09_ 
+	pick one of _week_ _plot_ _time_ _vend_ 
 	say 1021 
 
 _1stparton_ task:
@@ -184,21 +184,38 @@ _clearclick_ task:
 	when _npcclicked_ and not _mondead_ 
 	clear _npcclicked_ _clearclick_ 
 
-_S.06_ task:
+_week_ task:
 	place foe _giant_ at _mondung_ 
 
-_S.07_ task:
-	place foe _mage_ at _mondung_ 
+_inj1_ task:
+	injured _giant_
+	clicked foe _giant_
+	change foe _giant_ infighting true
+	say 1030 
 
-_orsinium_ task:
+_plot_ task:
 	place foe _wereboar_ at _mondung_ 
 
-_S.09_ task:
+_inj2_ task:
+	injured _wereboar_
+	clicked foe _wereboar_
+	change foe _wereboar_ infighting true
+	say 1030 
+
+_time_ task:
+	place foe _mage_ at _mondung_ 
+
+_inj3_ task:
+	injured _mage_
+	clicked foe _mage_
+	change foe _mage_ infighting true
+	say 1030 
+
+_vend_ task:
 	place foe _vampire_ at _mondung_ 
 
-_S.10_ task:
-	injured _wereboar_ 
-	injured _vampire_ 
-	injured _mage_ 
-	injured _giant_ 
-	say 1030 
+_inj4_ task:
+	injured _vampire_
+	clicked foe _vampire_
+	change foe _vampire_ infighting true
+	say 1030

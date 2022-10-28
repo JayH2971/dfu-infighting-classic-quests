@@ -146,6 +146,7 @@ _queston_ task:
 _S.01_ task:
 	clicked item _document_ 
 	create foe _guardian_ every 1 minutes 1 times with 100% success 
+	change foe _guardian_ infighting true
 	say 1011 
 
 _S.02_ task:

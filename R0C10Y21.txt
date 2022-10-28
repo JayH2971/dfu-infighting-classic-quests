@@ -132,6 +132,11 @@ Foe _monster_ is Orc_shaman
 	log 1015 step 0 
 	place foe _monster_ at _mondung_ 
 
+_inj_ task:
+	injured _monster_
+	clicked foe _monster_
+	change foe _monster_ infighting true
+
 _1stparton_ task:
 	end quest 
 

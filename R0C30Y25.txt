@@ -234,12 +234,19 @@ _S.10_ task:
 	give item _item2_ to _F.01_ 
 	restrain foe _F.01_ 
 	place foe _F.01_ at _thievesguild_ 
+	change foe _F.01_ infighting true
 
 _S.11_ task:
 	injured _F.01_ 
 	create foe _guards_ every 2 minutes 6 times with 50% success 
 	say 1030 
 	change repute with _qgenemy_ by -20 
+
+_daily_ task:
+    daily from 0:00 to 23:59
+    change foe _guards_ infighting true
+    change foe _thief_ infighting true
+    clear _daily_
 
 variable _2ndparton_
 _yesmap_ task:

@@ -204,6 +204,15 @@ _a6_ task:
 	create foe _wereboar_ every 12 minutes 5 times with 5% success 
 	place foe _wereboar_ at _dungeon2_ 
 
+_daily_ task:
+    daily from 0:00 to 23:59
+    change foe _zombie_ infighting true
+    change foe _mummy_ infighting true
+    change foe _F.00_ infighting true
+    change foe _spriggan_ infighting true
+    change foe _wereboar_ infighting true
+    clear _daily_
+
 _S.10_ task:
 	pick one of _a1_ _a2_ _a3_ _a1_ 
 

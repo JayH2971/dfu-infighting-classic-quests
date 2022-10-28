@@ -234,6 +234,11 @@ _S.07_ task:
 	log 1014 step 1 
 	say 1013 
 
+_inj_ task:
+	injured _vampire_
+	clicked foe _vampire_
+	change foe _vampire_ infighting true
+
 _S.01_ task:
 	killed 1 _vampire_ 
 	say 1016 

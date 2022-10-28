@@ -215,5 +215,10 @@ _S.10_ task:
 	give item _vampproof_ to _vamprival_ 
 	place foe _vamprival_ at _mondung_ 
 
+_inj_ task:
+	injured _vamprival_
+	clicked foe _vamprival_
+	change foe _vamprival_ infighting true
+
 _S.12_ task:
 	start timer _1stparton_ 

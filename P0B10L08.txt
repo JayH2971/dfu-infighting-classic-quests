@@ -238,6 +238,7 @@ _daedclicked_ task:
 
 _challenge_ task:
 	create foe _daedroth_ every 1 minutes 1 times with 100% success 
+	change foe _daedroth_ infighting true
 	hide npc _daedra_ 
 	say 1017 
 

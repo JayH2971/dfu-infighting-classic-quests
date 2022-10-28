@@ -181,6 +181,11 @@ _S.03_ task:
 	say 1010 
 	create npc _npc2_ 
 
+_daily_ task:
+    daily from 0:00 to 23:59
+    change foe _thief_ infighting true
+    clear _daily_
+
 variable _S.04_
 _queston_ task:
 	when _1stparton_ and not _S.03_ 

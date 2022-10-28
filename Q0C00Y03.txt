@@ -161,6 +161,11 @@ Foe _warrior_ is Warrior
 	pc at _home_ set _S.01_ 
 	add _child_ face 
 
+_daily_ task:
+    daily from 0:00 to 23:59
+    change foe _warrior_ infighting true
+    clear _daily_
+
 _queston_ task:
 	end quest 
 

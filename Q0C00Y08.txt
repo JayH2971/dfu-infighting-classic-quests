@@ -161,3 +161,8 @@ _S.04_ task:
 _S.05_ task:
 	create foe _guard_ every 20 minutes 20 times with 50% success msg 1012 
 	legal repute -30 
+
+_daily_ task:
+    daily from 0:00 to 23:59
+    change foe _guard_ infighting true
+    clear _daily_

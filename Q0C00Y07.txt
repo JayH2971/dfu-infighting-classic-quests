@@ -138,6 +138,11 @@ _S.01_ task:
 	say 1011 
 	add _witch_ face 
 
+_daily_ task:
+    daily from 0:00 to 23:59
+    change foe _guard_ infighting true
+    clear _daily_
+
 _qgclicked_ task:
 	clicked npc _qgiver_ 
 

@@ -190,6 +190,11 @@ _npcclicked_ task:
 until _npcclicked_ performed:
 	create foe _daedra_ every 5 minutes 10 times with 33% success 
 
+_daily_ task:
+    daily from 0:00 to 23:59
+    change foe _daedra_ infighting true
+    clear _daily_
+
 variable _qgclicked_
 _queston_ task:
 	when _1stparton_ and not _npcclicked_ 

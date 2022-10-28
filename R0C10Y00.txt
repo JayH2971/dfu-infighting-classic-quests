@@ -165,6 +165,11 @@ _S.03_ task:
 until _S.03_ performed:
 	create foe _thief_ every 10 minutes 5 times with 50% success 
 
+_daily_ task:
+    daily from 0:00 to 23:59
+    change foe _thief_ infighting true
+    clear _daily_
+
 _S.04_ task:
 	toting _item2_ and _npc2_ clicked 
 	give pc _reward_ 

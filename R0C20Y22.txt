@@ -205,6 +205,12 @@ until _S.05_ performed:
 	create foe _note_ every 5 minutes 12 times with 35% success 
 	create foe _F.01_ every 10 minutes 12 times with 35% success 
 
+_daily_ task:
+    daily from 0:00 to 23:59
+    change foe _note_ infighting true
+    change foe _F.01_ infighting true
+    clear _daily_
+
 _bookstore_ task:
 	get item _item_ 
 	say 1023 
