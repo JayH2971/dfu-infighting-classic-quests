@@ -179,6 +179,17 @@ _S.02_ task:
 _S.03_ task:
 	killed 3 _F.00_ 
 
+_daily_ task:
+    daily from 0:00 to 23:59
+    change foe _F.00_ infighting true
+    change foe _F.02_ infighting true
+	change foe _F.02_ team 19
+    change foe _F.03_ infighting true
+	change foe _F.03_ team 19
+    change foe _F.04_ infighting true
+	change foe _F.04_ team 19
+    clear _daily_
+
 _S.04_ task:
 	clicked npc _sleepingmage_ say 1012 
 	hide npc _sleepingmage_ 

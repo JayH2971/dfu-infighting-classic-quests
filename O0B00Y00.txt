@@ -160,6 +160,11 @@ _npcclicked_ task:
 	get item _gems_ 
 	say 1010 
 
+_daily_ task:
+    daily from 0:00 to 23:59
+    change foe _guards_ infighting true
+    clear _daily_
+
 _qgtalk_ task:
 	clicked npc _questgiver_
 
@@ -177,6 +182,7 @@ _1stparton_ task:
 
 _greklith_ task:
 	injured _guards_ 
+	clicked foe _guards_
 	prompt 1020 yes _S.05_ no _S.06_ 
 
 _S.05_ task:

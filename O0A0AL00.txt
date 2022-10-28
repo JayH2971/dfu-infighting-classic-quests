@@ -212,6 +212,11 @@ _questdone_ task:
 _S.02_ task:
 	create foe _F.00_ every 3 minutes 3 times with 25% success 
 
+_daily_ task:
+    daily from 0:00 to 23:59
+    change foe _F.00_ infighting true
+    clear _daily_
+
 _S.03_ task:
 	clicked item _clothing_ say 1018 
 	get item _note_ 

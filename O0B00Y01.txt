@@ -173,6 +173,14 @@ until _npcclicked_ performed:
 	create foe _F.02_ every 179 minutes 4 times with 5% success 
 	create foe _F.01_ every 163 minutes 4 times with 5% success 
 
+_daily_ task:
+    daily from 0:00 to 23:59
+    change foe _guards_ infighting true
+    change foe _F.01_ infighting true
+    change foe _F.02_ infighting true
+	change foe _F.01_ team 19
+    clear _daily_
+
 _qgtalk_ task:
 	clicked npc _questgiver_
 

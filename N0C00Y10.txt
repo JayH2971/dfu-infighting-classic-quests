@@ -194,15 +194,18 @@ _S.01_ task:
 _S.02_ task:
 	daily from 00:00 to 08:00 
 	place foe _thiefFoe_ at _house_ 
+    change foe _thiefFoe_ infighting true
 
 _S.03_ task:
 	daily from 16:02 to 23:59 
 --changed 24:00 to 23:59, 24:00 is not a valid time
 	place foe _thiefFoe_ at _inn_ 
+    change foe _thiefFoe_ infighting true
 
 _S.04_ task:
 	daily from 08:01 to 16:01 
 	place foe _thiefFoe_ at _store_ 
+    change foe _thiefFoe_ infighting true
 
 _S.05_ task:
 	clicked npc _informant_ say 1025 

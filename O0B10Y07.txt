@@ -139,6 +139,15 @@ _S.02_ task:
 	create foe _battlemage_ every 12 minutes 5 times with 15% success 
 	create foe _F.02_ every 13 minutes 20 times with 15% success 
 
+_daily_ task:
+    daily from 0:00 to 23:59
+    change foe _F.00_ infighting true
+    change foe _battlemage_ infighting true
+    change foe _F.02_ infighting true
+    change foe _F.03_ infighting true
+	change foe _F.03_ team 19
+    clear _daily_
+
 _S.04_ task:
 	clicked item _jewelry_
                 say 1020

@@ -170,6 +170,11 @@ _npcclicked_ task:
 	get item _gems_ 
 	say 1010 
 
+_daily_ task:
+    daily from 0:00 to 23:59
+    change foe _guards_ infighting true
+    clear _daily_
+
 _1stparton_ task:
 	have _metal_ set _keptmetal_ 
 	have _gems_ set _keptgems_ 

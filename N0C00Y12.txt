@@ -139,4 +139,7 @@ _1stparton_ task:
 	end quest 
 
 _S.06_ task:
-	injured _imp_ saying 1010 
+	injured _imp_
+	clicked foe _imp_
+	change foe _imp_ infighting true
+	say 1010 

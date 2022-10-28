@@ -236,6 +236,7 @@ _S.03_ task:
 	say 1032 
     hide npc _rebel_
 	place foe _mage1_ at _rebelhouse_ 
+	change foe _mage1_ infighting true
 	cast Spell_Reflection spell on _mage1_ 
 
 _S.04_ task:
@@ -247,6 +248,7 @@ _S.04_ task:
 
 _S.05_ task:
 	create foe _mage3_ every 1 minutes 1 times with 100% success
+	change foe _mage3_ infighting true
 	say 1061 
 	start timer _S.06_ 
 	remove foe _mage2_
@@ -255,6 +257,7 @@ _S.05_ task:
 
 _S.06_ task:
 	create foe _mage4_ every 1 minutes 1 times with 100% success
+	change foe _mage4_ infighting true
 	say 1062 
 	start timer _healer_ 
 	remove foe _mage3_
@@ -263,6 +266,7 @@ _S.06_ task:
 
 _healer_ task:
 	create foe _F.04_ every 1 minutes 1 times with 100% success
+	change foe _F.04_ infighting true
 	say 1063 
 	remove foe _mage4_
 	--"create foe" not known to support "say ###." moved to its own line.
@@ -323,5 +327,6 @@ variable _S.19_
 _S.20_ task:
 	when _S.04_ and not _S.19_ and not _S.08_ 
 	create foe _mage2_ every 1 minutes 1 times with 100% success 
+	change foe _mage2_ infighting true
 	start timer _S.05_ 
 	cast Spell_Reflection spell on _mage2_ 

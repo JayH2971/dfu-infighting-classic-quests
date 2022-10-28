@@ -152,6 +152,11 @@ _S.01_ task:
 	hide npc _contact1_ 
 	give pc _note_ notify 1031 
 
+_daily_ task:
+    daily from 0:00 to 23:59
+    change foe _enemy_ infighting true
+    clear _daily_
+
 _readnote_ task:
 	log 1021 step 1 
 

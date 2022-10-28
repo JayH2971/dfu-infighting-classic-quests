@@ -201,6 +201,7 @@ _S.06_ task:
 
 _S.07_ task:
 	injured _daedra_ 
+	clicked foe _daedra_
 	_spellScroll_ used do _S.08_ 
 
 until _S.07_ performed:

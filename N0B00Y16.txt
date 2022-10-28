@@ -206,6 +206,7 @@ _S.02_ task:
 _a3_ task:
 	create foe _imp_ every 1 minutes 1 times with 100% success 
 	say 1040 
+	change foe _imp_ infighting true
 
 _a4_ task:
 	_I.01_ used do _S.09_ 
@@ -216,6 +217,12 @@ _a5_ task:
 	create foe _rats_ every 3 minutes 3 times with 100% success 
 	create foe _bats_ every 2 minutes 2 times with 100% success 
 	say 1042 
+
+_daily_ task:
+    daily from 0:00 to 23:59
+    change foe _rats_ infighting true
+    change foe _bats_ infighting true
+    clear _daily_
 
 _a6_ task:
 	say 1043 
@@ -229,6 +236,7 @@ _S.08_ task:
 _S.09_ task:
 	create foe _skeleton_ every 1 minutes 1 times with 100% success 
 	make _I.01_ permanent 
+	change foe _skeleton_ infighting true
 
 _S.11_ task:
 	when _S.08_ and _S.10_ 

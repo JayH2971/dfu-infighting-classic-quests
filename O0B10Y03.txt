@@ -166,3 +166,11 @@ _guard3_ task:
 
 _guard4_ task:
 	create foe _F.03_ every 4 minutes 1 times with 10% success 
+
+_daily_ task:
+    daily from 0:00 to 23:59
+    change foe _F.00_ infighting true
+    change foe _F.01_ infighting true
+    change foe _F.02_ infighting true
+    change foe _F.03_ infighting true
+    clear _daily_
