@@ -200,6 +200,11 @@ Foe _F.03_ is Mage
 	_map_ used do _readmap_ 
 	place foe _guardian_ at _itemdung_ 
 
+_inj_ task:
+	injured _guardian_
+	clicked foe _guardian_
+	change foe _guardian_ infighting true
+
 _S.00_ task:
 	place item _map_ at _magesguild_ 
 	start timer _S.02_ 
@@ -324,6 +329,7 @@ _S.29_ task:
 	create foe _F.03_ every 0 minutes 1 times with 100% success 
 	say 1056 
 	make _item_ permanent 
+	change foe _F.03_ infighting true
 
 _S.30_ task:
 	when _S.05_ and not _S.16_ 
@@ -337,6 +343,11 @@ _S.32_ task:
 --sometimes this would delay much, and spawn after fast travel + pacify message
 	start timer _S.11_ 
 	say 1043 
+
+_daily_ task:
+    daily from 0:00 to 23:59
+    change foe _guards_ infighting true
+    clear _daily_
 
 _S.33_ task:
 	when _S.06_ or _S.22_ or _S.31_ or _S.28_ 

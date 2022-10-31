@@ -259,3 +259,13 @@ _S.20_ task:
 _S.21_ task:
 	when _S.17_ and _S.12_ 
 	create foe _F.05_ every 1 minutes 32768 times with 100% success 
+
+_daily_ task:
+    daily from 0:00 to 23:59
+    change foe _F.00_ infighting true
+    change foe _F.01_ infighting true
+    change foe _F.02_ infighting true
+    change foe _F.03_ infighting true
+    change foe _F.04_ infighting true
+    change foe _F.05_ infighting true
+    clear _daily_

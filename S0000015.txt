@@ -199,6 +199,8 @@ _S.01_ task:
 
 _S.02_ task:
 	injured Woodborne 
+	clicked foe Woodborne
+	change foe Woodborne infighting true
 	say 1040 
 	cast Spell_Reflection spell on Woodborne 
 	cast Heal spell on Woodborne 
@@ -235,6 +237,11 @@ _S.06_ task:
 	change repute with Gothryd by -40 
 	change repute with Eadwyre by -40 
 	legal repute -50 
+
+_daily_ task:
+    daily from 0:00 to 23:59
+    change foe _F.01_ infighting true
+    clear _daily_
 
 _S.07_ task:
 	toting WoodborneDiary and _gortwog_ clicked 

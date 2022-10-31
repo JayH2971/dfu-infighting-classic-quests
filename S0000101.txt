@@ -38,6 +38,11 @@ Foe _F.00_ is 3 Assassin
 	create foe _F.00_ every 100 minutes 30 times with 5% success 
 	start timer _S.02_ 
 
+_daily_ task:
+    daily from 0:00 to 23:59
+    change foe _F.00_ infighting true
+    clear _daily_
+
 _S.00_ task:
 	injured _F.00_ 
 	start timer _S.01_ 

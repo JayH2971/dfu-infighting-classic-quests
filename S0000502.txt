@@ -169,6 +169,7 @@ _S.00_ task:
 
 _S.01_ task:
 	injured _atronach_ 
+	clicked foe _atronach_
 	start timer _towertime_ 
 	log 1021 step 1 
 	reveal _direni1_ in province 9 at 204718 
@@ -191,6 +192,7 @@ _S.05_ task:
 _S.06_ task:
 	clicked item _item_ 
 	place foe _guardian_ at _direni2_ 
+	change foe _guardian_ infighting true
 
 _S.07_ task:
 	when _S.04_ and not _S.06_ 
@@ -230,6 +232,12 @@ _S.11_ task:
 	when _S.10_ and _accompany_ 
 	create foe _monster2_ every 7 minutes 10 times with 20% success 
 	create foe _monster1_ every 5 minutes 10 times with 20% success 
+
+_daily_ task:
+    daily from 0:00 to 23:59
+    change foe _monster1_ infighting true
+    change foe _monster2_ infighting true
+    clear _daily_
 
 _S.12_ task:
 	injured _monster1_ 

@@ -139,6 +139,11 @@ Foe _monster_ is Frost_daedra
 	place foe _monster_ at _mondung_ 
 	place npc _contact_ at _tavern_ 
 
+_inj_ task:
+	injured _monster_
+	clicked foe _monster_
+	change foe _monster_ infighting true
+
 _pcgetsgold_ task:
 	when _qgclicked_ and _mondead_ 
 	give pc _artifact_ 

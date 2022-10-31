@@ -432,6 +432,8 @@ _S.16_ task:
 
 _S.17_ task:
 	injured _brother_ 
+	clicked foe _brother_
+	change foe _brother_ infighting true
 	have _relic_ set _S.15_ 
 
 _S.18_ task:
@@ -443,6 +445,7 @@ _S.19_ task:
 _S.20_ task:
 	when _S.14_ and _S.16_ 
 	place foe boar at _L.02_ marker 0
+	change foe boar infighting true
 
 _S.21_ task:
 	when _S.17_ and _S.16_ 
@@ -566,6 +569,11 @@ _S.41_ task:
 	create foe talisman every 5 minutes 10 times with 75% success 
 	give item _relic_ to _brother_ 
 	say 1021 
+
+_daily_ task:
+    daily from 0:00 to 23:59
+    change foe talisman infighting true
+    clear _daily_
 
 _S.42_ task:
 	when _S.08_ and not _mondead_ and _S.19_ and not _S.14_

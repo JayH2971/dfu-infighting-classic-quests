@@ -236,6 +236,12 @@ _slainKnights_ task:
 _spawnKnights_ task:
 	send _knights_ every 91 minutes 10 times with 10% success 
 
+_daily_ task:
+    daily from 0:00 to 23:59
+    change foe _barbarians_ infighting true
+    change foe _knights_ infighting true
+    clear _daily_
+
 _foilGone_ task:
 	when _slainKnights_ and _slainBarbarians_ and not _daytime_ 
 	say 1011 

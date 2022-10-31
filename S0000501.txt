@@ -162,6 +162,11 @@ Foe _mtraitor_ is Ranger
 	start timer _S.00_ 
 	have _letter_ set _startpatsy_
 
+_daily_ task:
+    daily from 0:00 to 23:59
+    change foe _F.00_ infighting true
+    clear _daily_
+
 _startpatsy_ task:
 	start timer _patsy_ 
 
@@ -188,6 +193,7 @@ _S.05_ task:
 
 _hittraitor_ task:
 	injured _mtraitor_ 
+	clicked foe _mtraitor_
 
 _S.07_ task:
 	killed 1 _mtraitor_ 
@@ -233,6 +239,7 @@ _yes_ task:
 
 _no_ task:
 	say 1045 
+	change foe _mtraitor_ infighting true
 
 _S.14_ task:
 	when _S.10_ or _traitordead_ 

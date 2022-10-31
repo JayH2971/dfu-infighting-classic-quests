@@ -140,6 +140,11 @@ _S.02_ task:
 	say QuestorOffer 
 	place foe _mummy_ at _crypt_ 
 
+_inj_ task:
+	injured _mummy_
+	clicked foe _mummy_
+	change foe _mummy_ infighting true
+
 _S.03_ task:
 	toting _spider_ and _medora_ clicked 
 	start quest 22 22 

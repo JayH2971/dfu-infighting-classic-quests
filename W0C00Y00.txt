@@ -177,6 +177,11 @@ _mondead_ task:
 	create foe _guard2_ every 3 minutes 5 times with 50% success 
 	say 1030 
 
+_inj_ task:
+	injured _monster_
+	clicked foe _monster_
+	change foe _monster_ infighting true
+
 _npcclicked_ task:
 	clicked npc _contact_ 
 
@@ -200,6 +205,12 @@ yes task:
 
 _no_ task:
 	create foe _guard1_ every 2 minutes 5 times with 35% success 
+
+_daily_ task:
+    daily from 0:00 to 23:59
+    change foe _guard1_ infighting true
+    change foe _guard2_ infighting true
+    clear _daily_
 
 _S.10_ task:
 	toting _magic_ and _contact_ clicked 

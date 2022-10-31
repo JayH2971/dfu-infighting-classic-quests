@@ -540,6 +540,12 @@ EadwyreGotTotem _S.36_
 	create foe _F.01_ every 1 minutes 5 times with 100% success 
 	say 1051 
 
+_daily_ task:
+    daily from 0:00 to 23:59
+    change foe _F.00_ infighting true
+    change foe _F.01_ infighting true
+    clear _daily_
+
 _S.37_ task:
 	when _S.46_ and _S.07_ 
 	get item _goldgoth_ from _Gothryd_ 

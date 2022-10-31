@@ -61,6 +61,12 @@ _S.04_ task:
 	create foe _F.00_ every 1440 minutes 20 times with 5% success 
 	create foe _F.01_ every 1440 minutes 10 times with 3% success 
 
+_daily_ task:
+    daily from 0:00 to 23:59
+    change foe _F.00_ infighting true
+    change foe _F.01_ infighting true
+    clear _daily_
+
 GothrydGotTotem _S.05_
 KingOfWormsGotTotem _S.06_
 GortwogGotTotem _S.07_

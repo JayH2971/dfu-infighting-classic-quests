@@ -253,3 +253,8 @@ _S.11_ task:
 	say 1015 
 	change repute with _aubki_ by -10 
 	send _F.00_ every 500 minutes 10 times with 50% success 
+
+_daily_ task:
+    daily from 0:00 to 23:59
+    change foe _F.00_ infighting true
+    clear _daily_

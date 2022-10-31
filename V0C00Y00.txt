@@ -140,6 +140,11 @@ Foe _monster_ is Werewolf
 	log 1020 step 0 
 	place foe _monster_ at _mondung_ 
 
+_inj_ task:
+	injured _monster_
+	clicked foe _monster_
+	change foe _monster_ infighting true
+
 _pcgetsgold_ task:
 	when _qgclicked_ and _mondead_ 
 	give pc _artifact_ 

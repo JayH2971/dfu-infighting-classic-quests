@@ -40,6 +40,12 @@ Foe _F.01_ is 3 Orc_shaman
 	create foe _F.00_ every 100 minutes 15 times with 3% success 
 	start timer _S.02_ 
 
+_daily_ task:
+    daily from 0:00 to 23:59
+    change foe _F.00_ infighting true
+    change foe _F.01_ infighting true
+    clear _daily_
+
 _S.00_ task:
 	injured _F.01_ 
 	injured _F.00_ 

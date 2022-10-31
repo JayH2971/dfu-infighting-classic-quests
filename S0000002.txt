@@ -405,6 +405,12 @@ _S.19_ task:
 	say 1030 
 	change repute with Castellian by -10 
 
+_daily_ task:
+    daily from 0:00 to 23:59
+    change foe _F.00_ infighting true
+    change foe _battlemage_ infighting true
+    clear _daily_
+
 _S.20_ task:
 	when _S.02_ and not _S.07_ 
 	letter41 used do _S.21_ 

@@ -140,6 +140,11 @@ yes task:
 	say AcceptQuest 
 	place foe _lich_ at _sentinel_ marker 0
 
+_inj_ task:
+	injured _lich_
+	clicked foe _lich_
+	change foe _lich_ infighting true
+
 _no_ task:
 	say RefuseQuest 
 	end quest 
@@ -147,6 +152,11 @@ _no_ task:
 _S.06_ task:
 	when _S.00_ and _S.01_ 
 	send _zombie_ every 1410 minutes with 100% success 
+
+_daily_ task:
+    daily from 0:00 to 23:59
+    change foe _zombie_ infighting true
+    clear _daily_
 
 until _S.06_ performed:
 	mute npc _kingoworms_ 

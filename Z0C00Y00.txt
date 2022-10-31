@@ -185,11 +185,19 @@ _S.06_ task:
 	create foe _guards_ every 2 minutes 10 times with 25% success 
 	hide npc _enemy_ 
 	place foe _monster_ at _palace_ 
+	change foe _monster_ infighting true
 
 _S.07_ task:
 	injured _monster_ 
 	create foe _bodyguard_ every 1 minutes 1 times with 100% success 
+	change foe _bodyguard_ infighting true
+	change foe _bodyguard_ team 19
 	say 1041 
 
 _greklith_ task:
 	injured _guards_ saying 1040 
+
+_daily_ task:
+    daily from 0:00 to 23:59
+    change foe _guards_ infighting true
+    clear _daily_

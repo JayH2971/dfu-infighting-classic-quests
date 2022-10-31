@@ -193,6 +193,11 @@ Foe _monster1_ is Spellsword
 	_letter_ used do _readletter_ 
 	place foe _monster_ at _mondung_ 
 
+_inj_ task:
+	injured _monster_
+	clicked foe _monster_
+	change foe _monster_ infighting true
+
 _1stparton_ task:
 	end quest 
 
@@ -225,6 +230,11 @@ _S.08_ task:
 	remove foe _monster_
 	place foe _monster1_ at _hideout_ 
 --added monster1 due to duplicate monster issue
+
+_inj1_ task:
+	injured _monster1_
+	clicked foe _monster1_
+	change foe _monster1_ infighting true
 
 _S.09_ task:
 	clicked npc _mfriend_ 
